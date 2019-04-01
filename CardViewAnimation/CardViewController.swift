@@ -7,16 +7,6 @@ import UIKit
  */
 class CardViewController: UIViewController {
     
-    let testLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.text = "Hello"
-        label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 30)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
     let openedImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Drawer-Opened-Indicator")?.withRenderingMode(.alwaysTemplate)
@@ -36,25 +26,6 @@ class CardViewController: UIViewController {
         imageView.isUserInteractionEnabled = false
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
         return imageView
-    }()
-    
-    let visualEffectView: UIVisualEffectView = {
-        let view = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
-        view.isUserInteractionEnabled = false
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.alpha = 0
-        return view
-    }()
-    
-    let descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.alpha = 0
-        label.textColor = UIColor.white.withAlphaComponent(0.5)
-        label.text = "This is description label"
-        label.textAlignment = .left
-        label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
     }()
     
     private let handleArea: UIView = {
@@ -162,7 +133,6 @@ class CardViewController: UIViewController {
         }
 
         handleArea.addGestureRecognizer(InstantPanGestureRecognizer(target: self, action: #selector(panned(recognizer:))))
-        visualEffectView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:))))
     }
     
     @objc private func handleTap(recognizer: UITapGestureRecognizer) {
@@ -227,15 +197,11 @@ class CardViewController: UIViewController {
             if self.isOpen {
                 // will animate to closed
                 self.view.transform = self.closedTransform
-                self.testLabel.transform = .identity
-                self.descriptionLabel.alpha = 0
                 self.openedImageView.alpha = 0
                 self.closedImageView.alpha = 1
             } else {
                 // will animate to open
                 self.view.transform = .identity
-                self.testLabel.transform = CGAffineTransform(scaleX: 1.2, y: 1.2).concatenating(CGAffineTransform(translationX: -self.view.frame.size.width / 3, y: 0))
-                self.descriptionLabel.alpha = 1
                 self.openedImageView.alpha = 1
                 self.closedImageView.alpha = 0
             }
