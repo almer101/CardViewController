@@ -168,13 +168,6 @@ class CardViewController: UIViewController {
         default:
             break
         }
-        updateIndicatorImageViews()
-    }
-    
-    private func updateIndicatorImageViews() {
-        if animator.fractionComplete > 0.5 {
-            
-        }
     }
     
     private func pauseAnimator() {
