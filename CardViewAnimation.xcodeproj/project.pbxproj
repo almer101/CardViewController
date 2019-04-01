@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		401E165C224A04A000A14DE2 /* UIView+CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E165B224A04A000A14DE2 /* UIView+CardView.swift */; };
 		401E165E224A0AED00A14DE2 /* UIViewController+CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E165D224A0AED00A14DE2 /* UIViewController+CardView.swift */; };
 		401E1660224A0B4000A14DE2 /* DealCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E165F224A0B4000A14DE2 /* DealCardViewController.swift */; };
 		401E1662224A2E8000A14DE2 /* DealCardHandleAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E1661224A2E8000A14DE2 /* DealCardHandleAreaView.swift */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		401E165B224A04A000A14DE2 /* UIView+CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CardView.swift"; sourceTree = "<group>"; };
 		401E165D224A0AED00A14DE2 /* UIViewController+CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CardView.swift"; sourceTree = "<group>"; };
 		401E165F224A0B4000A14DE2 /* DealCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCardViewController.swift; sourceTree = "<group>"; };
 		401E1661224A2E8000A14DE2 /* DealCardHandleAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCardHandleAreaView.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				40CFDE252252081300263363 /* UIColor+CardView.swift */,
-				401E165B224A04A000A14DE2 /* UIView+CardView.swift */,
 				401E165D224A0AED00A14DE2 /* UIViewController+CardView.swift */,
 			);
 			path = Extensions;
@@ -120,14 +117,14 @@
 				40EBF7432244F86A002D06F8 /* ViewController.swift */,
 				409467532248B1900045D448 /* InstantPanGestureRecognizer.swift */,
 				5204A0A92183987F00338C4D /* CardViewController.swift */,
-				40793ACB223FBFEE00F1A34C /* Main.storyboard */,
-				5204A09C2183971900338C4D /* Assets.xcassets */,
-				5204A09E2183971900338C4D /* LaunchScreen.storyboard */,
-				5204A0A12183971900338C4D /* Info.plist */,
 				40CFDE2C22520A0B00263363 /* Shared */,
 				40CFDE2B225209E000263363 /* Extensions */,
 				401E1664224A51CE00A14DE2 /* Filter */,
 				401E1663224A519800A14DE2 /* Deal */,
+				40793ACB223FBFEE00F1A34C /* Main.storyboard */,
+				5204A09C2183971900338C4D /* Assets.xcassets */,
+				5204A09E2183971900338C4D /* LaunchScreen.storyboard */,
+				5204A0A12183971900338C4D /* Info.plist */,
 			);
 			path = CardViewAnimation;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 				401E1662224A2E8000A14DE2 /* DealCardHandleAreaView.swift in Sources */,
 				40CFDE262252081300263363 /* UIColor+CardView.swift in Sources */,
 				40EBF7442244F86A002D06F8 /* ViewController.swift in Sources */,
-				401E165C224A04A000A14DE2 /* UIView+CardView.swift in Sources */,
 				401E1668224A525500A14DE2 /* RefinementTableHeaderView.swift in Sources */,
 				401E1666224A51E200A14DE2 /* FilterSortCardViewController.swift in Sources */,
 				40CFDE28225208FC00263363 /* ScrollDirection.swift in Sources */,
